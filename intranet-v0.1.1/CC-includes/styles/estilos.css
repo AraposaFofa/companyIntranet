@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Outfit', 'Montserrat', 'Poppins';
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+#random{ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+::selection{ 
+    background-color:#7F0000;
+    color: white;
+}
+.content{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.widgetContent{
+    margin: auto; 
+    max-width: 35em; 
+    min-width: none;
+}
+#divBar2{ 
+    min-width: 18em;
+}
+.divBar{
+    background-color: black;
+    padding: 1px;
+    /*! CONTEINER !*/
+    margin-bottom: 1.7em;
+    margin-top: 1.7em;
+    min-width: 15em;
+    max-width: 35em;
+}
+/**HEADER*/
+header{
+    width: 100%;
+    background-color: black ;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    margin-bottom: 2em;
+    padding: 0 10vw;    
+}
+nav ul li{
+    display: inline-block;
+    gap: 0px;
+    font-size: 0.7em;
+    padding: 0.6em;
+}
+header a img{
+    max-height: 1.5em;
+}
+/**FOOTER*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: lightgray;
+}
+footer section{
+    font-size: 12px;
+    margin: 0 10vw;
+}
+/**SCROLLBAR*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background:#FC7E54;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#dd633a;
+}
+/** NEWS */
+.newsContentContainer{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    min-width: none;
+}
+.newsTableContent{
+    background: rgba(15, 28, 45, 0.7);
+    backdrop-filter: blur(27.1828px);
+    border-radius: 6px;
+    padding: 8px 20px 14px;
+}
+.newsContentWidget{
+    max-width: 100%;
+    transition: background 0.5s ease 0s;
+    border-radius: 6px;
+}
+.newsContentTitle{
+    margin-top: 6px;   
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    line-height: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.newsContent{
+    margin-top: 11px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.newsSecondaryContent{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+}
+/**LOGO*/
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.logoEletricca{
+    max-width: 400px;
+}
+.newsContentTitleIcon{
+    max-width: 40px;
+    margin-bottom: 5px;
+}   
+/**LINKS*/
+a:hover{
+    color: darkgray;
+}
+a{
+    text-decoration: none;
+    color: lightgray;
+    font-size: 0.9em;
+    padding: 0.6em 0.4em;
+}
+footer a{
+    color: white;
+}
+
+/**TABELA*/
+
+table{
+    background-color: rgba(15, 28, 45, 0.7);    
+    overflow: hidden;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    backdrop-filter: blur(14px);
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
+tr td{
+    padding: 0.3em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+}
+.tableTitle{
+    padding: 0.6em;
+    font-weight: 600;
+    font-size: 1.4em;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+tr.tableHeaders th{
+    padding: 0.4em;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#last{
+    background-color: rgba(15, 28, 45, 0.7);
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: black;
+}
+tbody:nth-child(even){
+    background-color: rgba(15, 28, 45, 0.7);
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+}
+tr th{
+    font-size: 1em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.3em;
+}
+td:nth-of-type(2){
+    text-align: center;
+}
+
+#clock-date{
+    line-height: 0;
+    font-size: 0.8em;
+}
+
+
+/** FORMULARIO */
+
+
+.widgetContent label, input{
+    display: block;
+}
+input[type=button]{
+    margin: 0  auto;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- METAS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LINKS-->
+    <link rel="stylesheet" href="CC-includes/styles/estilos.css">   
+    <link rel="shortcut icon" href="CC-includes/imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    
+    <!-- FAVICON-->
+    
+
+    <!-- SCRIPTS-->
+    <script src="CC-includes/scripts/scripts_mensagem.js"></script>
+    <script src="CC-includes/scripts/scripts_clock.js"></script>
+    <script src="CC-includes/scripts/sorting-button.js"></script>
+    
+    <!-- TITULO-->
+    <title>Eletricca</title>
+</head>
+<body id="random" onload="randomBackground(); clock(); goodMoment()">
+    <header>
+        <a href="https://eletricca.com.br">
+            <img src="CC-includes/imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" alt="">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li><!--
+            --><li><a href="https://app.asana.com/-/login" target="_blank" rel="noopener noreferrer">Asana</a></li><!--
+            --><li><a href="#ramais">Ramais</a></li><!--
+            --><li><a href="https://app.pipedrive.com/auth/login" target="_blank" rel="noopener noreferrer">Pipedrive</a></li><!--
+            -->
+            </ul>
+        </nav>
+    </header>
+
+    <!--LOGO-->
+    <div class="content" id="inicio">
+        <!-- O CONTENT É O CONTEUDO EM SI, ELE DEFINE A FLEXBOX DOS ITEMS (WIDGETS)-->
+        <!-- OS WIDGETCONTENT SÃO CADA ELEMENTO DENTRO DA FLEXBOX-->
+        <!-- DENTRO DE CADA WIDGETCONTENT, TEM OS ITEMS DO WIDGET -->
+
+        <div class="widgetContent">
+            <div class="widgetLogo">
+                <div class="logoEletricca">
+                    <img src="CC-includes/imgs/logo_PRINCIPAL_transparent_background.png" alt="EletriccaLogo">
+                </div>
+            </div>
+        </div>
+        
+        <!-- LINHA PRETA HORIZONTAL-->
+        <div class="divBar"></div>
+        <!-- TELINHA COM A MENSAGEM E RELOGIO-->
+        
+        <div class="widgetContent">
+            <div class="newsContentContainer">
+                <div class="newsContentWidget">
+                    <div class="newsTableContent">
+                        <div class="newsContentTitle">
+                            <div class="newsContentTitleIcon">
+                                <img src="CC-includes/imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" alt="">
+                            </div>
+                            <div id="mensagem">BEM VINDO</div>
+                        </div>
+                        <div id="mensagem2" class="newsContent">BEM VINDO E BOM TRABALHO!</div>
+                        <div class="newsSecondaryContent"><div  id="clock">00:00</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DIV BAR-->
+        <div class="divBar" id="divBar2"></div>
+        
+        <!-- RAMAIS TABELA-->
+        <div class="widgetContent">
+            
+            <table id="ramais">
+                <tbody>
+                    <tr>
+                        <th class="tableTitle" colspan="3">Ramais</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="tableHeaders">
+                        <th onclick="sortTable(0)">Setor</th>
+                        <th onclick="sortTable(1)">Nome</th>
+                        <th onclick="sortTable(2)">Ramal</th>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">Administração</th>
+                        <td>Ricardo Meirelles</td>
+                        <td>1001</td>
+                    </tr>
+                    <tr>
+                        <td>Julie Pimenta</td>
+                        <td>1002</td>
+                    </tr>
+                    <tr>
+                        <td>Rogério Silva</td>
+                        <td>1003</td>
+                    </tr>
+                    <tr>
+                        <td>Leonardo Alves</td>
+                        <td>1010</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="7">Comercial</th>
+                        <td>Marcelo Poça</td>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Aparecida</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Mello</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Bernardo Externo</td>
+                        <td>2007</td>
+                    </tr>
+                    <tr>
+                        <td>Ingrid Cardoso</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriela Silva</td>
+                        <td>3006</td>
+                    </tr>
+                    <tr>
+                        <td>Andrey Felipe</td>
+                        <td>3011</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">Planejamento</th>
+                        <td>Maria Clara</td>
+                        <td>3001</td>
+                    </tr>
+                    <tr>
+                        <td>Jhennefer Maia</td>
+                        <td>3002</td>
+                    </tr>
+                    <tr>
+                        <td>Empty</td>
+                        <td>Empty</td>
+                    </tr>
+                    <tr>
+                        <td>Jorge Rodrigues</td>
+                        <td>3004</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="6">Técnico</th>
+                        <td>Etyvin Müller</td>
+                        <td>3005</td>
+                    </tr>
+                    <tr>
+                        <td>Erika Santos</td>
+                        <td>3007</td>
+                    </tr>
+                    <tr>
+                        <td>Ezequiel Soares</td>
+                        <td>3008</td>
+                    </tr>
+                    <tr>
+                        <td>Glauber Santos</td>
+                        <td>3009</td>
+                    </tr>
+                    <tr>
+                        <td>Renato Rocha</td>
+                        <td>3010</td>
+                    </tr>
+                    <tr>
+                        <td>Luiz Patrizzi</td>
+                        <td>3012</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th rowspan="4">CONSTRULAR</th>
+                        <td>Renato Lopes</td>
+                        <td>3110</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle Soares</td>
+                        <td>3111</td>
+                    </tr>
+                    <tr>
+                        <td>Heitor Ventura</td>
+                        <td>3112</td>
+                    </tr>
+                    <tr>
+                        <td>Ronaldo Silva</td>
+                        <td>3113</td>
+                    </tr>
+                </tbody>
+                <tbody #last>
+                    <tr>
+                        <th rowspan="3">Outros Setores</th>
+                        <td>Sala de Reunião</td>
+                        <td>3100</td>
+                    </tr>
+                    <tr>
+                        <td>TI</td>
+                        <td>3200</td>
+                    </tr>
+                    <tr>
+                        <td>MODELICIAS</td>
+                        <td>4110</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>
