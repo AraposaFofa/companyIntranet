@@ -23,8 +23,6 @@ it in the future (trust me).
 
 ***
 
-# Documentation of Intranet WebApp #
-
 ## Overview
 
 The WebApp basically is basically a application for company users to act like a browser home page. It's built in NodeJS and Raw JavaScript Providing Static Files by an Apache (I'm planning on changing to NgineX) Reverse Proxy. ~~Yeah, it really is just that~~. 
