@@ -37,4 +37,14 @@ It is built using NodeJS. All of the backend will and must be built using JavaSc
 
 That said, we use ExpressJS for handling GET, POST and others requests, we make it listen on one port than we use apache to redirect all traffic that comes on port 80 to this port **as a proxy**. I'm thinking of using ngineX, but for now is just a thought.
 
-## 
+## Organization
+
+I really am a unorganized person, so I thought in a way to organize things efficiently. ~~I didn't got a good way~~ 
+
+Basically, what I did was putting the server.js in the __root__ directory, then put things like a tree. 
+Utilities in a directory called __utils__, important files like log file in a directory called __logs__, the WebApp frontend in a directory called ~~__things__ ok, no more jokes for now~~ __themes__. 
+You must be thinking "why did you put things inside a directory called themes?" Well, I'm planning on building more themes for users to chose, like dark or light theme, purple based, windows based and so on. But I think I will just keep two themes and see the results. 
+
+Continuing... We use **__camelCase__** notation on JS files, we name files using mostly camelCase, we use the **__lined notation__** on CSS classes, we use **__HTML semantics__** on our HTML structure.  
+
+
