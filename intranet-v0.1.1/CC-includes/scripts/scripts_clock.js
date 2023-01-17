@@ -58,9 +58,9 @@ showTime();
 function randomBackground() {
     let random= Math.floor(Math.random()* 3 ) + 0
     let bigSize = [ 
-        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) ),url('CC-includes/imgs/ENCONTREI.jpg')",
-        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) ),url('CC-includes/imgs/ENCONTREI2.jpg')",
-        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) ),url('CC-includes/imgs/random4.jpg')",
+        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) )",
+        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) )",
+        "linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) )",
     ]
 document.getElementById("random").style.backgroundImage=bigSize[random]
 }
