@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- METAS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- LINKS-->
-    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/estilos.css">   
     <link rel="shortcut icon" href="imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+    
     <!-- FAVICON-->
+    
 
-
+    <!-- SCRIPTS-->
+    <script src="scripts/scripts_mensagem.js"></script>
+    <script src="scripts/scripts_clock.js"></script>
+    <script src="scripts/sorting-button.js"></script>
+    
     <!-- TITULO-->
     <title>Eletricca</title>
 </head>
-
-<body id="random" onload="randomBackground();  quoter();">
+<body id="random" onload="randomBackground(); clock(); goodMoment()">
     <header>
         <a href="https://eletricca.com.br">
             <img src="imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" alt="">
@@ -28,18 +31,20 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li><!--
-            -->
-                <li><a href="https://app.asana.com/-/login" target="_blank" rel="noopener noreferrer">Asana</a></li><!--
-            -->
-                <li><a href="#ramais">Ramais</a></li><!--
-            -->
-                <li><a href="https://app.pipedrive.com/auth/login" target="_blank"
-                        rel="noopener noreferrer">Pipedrive</a></li><!--
+            --><li><a href="https://app.asana.com/-/login" target="_blank" rel="noopener noreferrer">Asana</a></li><!--
+            --><li><a href="#ramais">Ramais</a></li><!--
+            --><li><a href="https://app.pipedrive.com/auth/login" target="_blank" rel="noopener noreferrer">Pipedrive</a></li><!--
             -->
             </ul>
         </nav>
     </header>
+
+    <!--LOGO-->
     <div class="content" id="inicio">
+        <!-- O CONTENT É O CONTEUDO EM SI, ELE DEFINE A FLEXBOX DOS ITEMS (WIDGETS)-->
+        <!-- OS WIDGETCONTENT SÃO CADA ELEMENTO DENTRO DA FLEXBOX-->
+        <!-- DENTRO DE CADA WIDGETCONTENT, TEM OS ITEMS DO WIDGET -->
+
         <div class="widgetContent">
             <div class="widgetLogo">
                 <div class="logoEletricca">
@@ -47,48 +52,34 @@
                 </div>
             </div>
         </div>
+        
+        <!-- LINHA PRETA HORIZONTAL-->
         <div class="divBar"></div>
+        <!-- TELINHA COM A MENSAGEM E RELOGIO-->
+        
         <div class="widgetContent">
             <div class="newsContentContainer">
                 <div class="newsContentWidget">
                     <div class="newsTableContent">
-                        <div class="newsContentTitle" style="flex-direction: column;">
+                        <div class="newsContentTitle">
                             <div class="newsContentTitleIcon">
                                 <img src="imgs/cropped-logo_PRINCIPAL_transparent_background-150x150.png" alt="">
                             </div>
-                            <div><p id="mensagem"></p></div>
+                            <div id="mensagem">BEM VINDO</div>
                         </div>
-                       
-                        <div class="newsSecondaryContent">
-                            <div id="clock">00:00</div>
-                        </div>
-
-                        <div class="newsContent">
-                            <div class="newsContent">
-                                <div id="quote"></div>
-                                <div id="author"></div>
-                            </div>
-                        </div>
+                        <div id="mensagem2" class="newsContent">BEM VINDO E BOM TRABALHO!</div>
+                        <div class="newsSecondaryContent"><div  id="clock">00:00</div></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="divBar" id="divBar2"></div>
 
-        <div class="widgetContent">
-            <div class="form-content">
-                <p id="p1">Coloque seu nome e clique em enviar para enviar um e-mail para o ponto.</p>
-                <form action="/" method="post">
-                    <input type="text" required name="user" id="input-user" placeholder="Coloque seu nome">
-                    <input type="text" name="login" id="input-login" placeholder="Coloque seu email">
-                    <input type="text" name="pass" id="input-pass" placeholder="Senha">
-                    <input type="submit" value="Enviar" id="enviar">
-                </form>  
-                <p>Isso é um teste, envie o ponto do mesmo jeito!</p>
-            </div>
-        </div>
+        <!-- DIV BAR-->
         <div class="divBar" id="divBar2"></div>
+        
+        <!-- RAMAIS TABELA-->
         <div class="widgetContent">
+            
             <table id="ramais">
                 <tbody>
                     <tr>
@@ -97,20 +88,24 @@
                 </tbody>
                 <tbody>
                     <tr class="tableHeaders">
-                        <th>Setor</th>
-                        <th>Nome</th>
-                        <th>Ramal</th>
+                        <th onclick="sortTable(0)">Setor</th>
+                        <th onclick="sortTable(1)">Nome</th>
+                        <th onclick="sortTable(2)">Ramal</th>
                     </tr>
                 </tbody>
                 <tbody>
                     <tr>
-                        <th rowspan="3">Administração</th>
+                        <th rowspan="4">Administração</th>
                         <td>Ricardo Meirelles</td>
                         <td>1001</td>
                     </tr>
                     <tr>
                         <td>Julie Pimenta</td>
                         <td>1002</td>
+                    </tr>
+                    <tr>
+                        <td>Rogério Silva</td>
+                        <td>1003</td>
                     </tr>
                     <tr>
                         <td>Leonardo Alves</td>
@@ -196,18 +191,26 @@
                 </tbody>
                 <tbody>
                     <tr>
-                        <th rowspan="2">CONSTRULAR</th>
+                        <th rowspan="4">CONSTRULAR</th>
                         <td>Renato Lopes</td>
                         <td>3110</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle Soares</td>
+                        <td>3111</td>
                     </tr>
                     <tr>
                         <td>Heitor Ventura</td>
                         <td>3112</td>
                     </tr>
+                    <tr>
+                        <td>Ronaldo Silva</td>
+                        <td>3113</td>
+                    </tr>
                 </tbody>
                 <tbody #last>
                     <tr>
-                        <th rowspan="2">Outros Setores</th>
+                        <th rowspan="3">Outros Setores</th>
                         <td>Sala de Reunião</td>
                         <td>3100</td>
                     </tr>
@@ -215,26 +218,14 @@
                         <td>TI</td>
                         <td>3200</td>
                     </tr>
+                    <tr>
+                        <td>MODELICIAS</td>
+                        <td>4110</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        <div class="secret widgetContent">
-            <form action="/yt-downloads" method="post">
-                <input type="text" name="ytd" id="ytd">
-                <input type="submit" value="Enviar" id="ytd-b">
-            </form>
-        </div>
+        
     </div>
-    <footer>
-        <section></section>
-        <section>
-            <p style="float: right; font-size: 14px">v1.1.0</p>
-        </section>
-    </footer>
 </body>
-
-<!-- SCRIPTS-->
-<script src="scripts/scripts_clock.js"></script>
-<script src="quotes.json" type="application/json"></script>
-<script src="scripts/quoter.js"></script>
 </html>

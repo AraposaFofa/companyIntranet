@@ -121,22 +121,15 @@ footer section{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }
-#quote, #author {
-    font-size: 1em;
-}
-#author{
-    float: right;
-}
 .newsContent{
-    margin-top: 1em;
-    margin-bottom: 1.6em;
+    margin-top: 11px;
+    margin-bottom: 16px;
     color: rgba(255, 255, 255, 0.8);
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.02em;
-    max-width: 25em;
 }
 .newsSecondaryContent{
     font-family: Arial, Helvetica, sans-serif;
@@ -243,62 +236,9 @@ td:nth-of-type(2){
 /** FORMULARIO */
 
 
-.form-content{
-    background: rgba(15, 28, 45, 0.7);
-    backdrop-filter: blur(27.1828px);
-    border-radius: 6px;
-    padding: 8px 20px 14px; 
-    max-width: 20em;
-}
-.form-content input{
+.widgetContent label, input{
     display: block;
 }
-.form-content input[type=submit]{
-    display: none;
-    margin: 0 auto;
-    background: none;
-    cursor: pointer;
-    color: white;
-    border: none;
-    margin-top: 1em;
+input[type=button]{
+    margin: 0  auto;
 }
-input:not(#input-user, #ytd, #ytd-b, #enviar){
-    display: none;
-}
-#enviar{
-    display: block;
-}
-#ytd-b{
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    color: transparent;
-}
-#ytd{
-    background-color: transparent;
-    border: transparent;
-    outline: none;
-}
-
-.form-content input[type=text]{
-    margin-top: 1em;
-    padding-bottom: 0.3em;
-    border: none;
-    background: none;
-    color: white;
-    border-bottom: 1px solid black;
-}
-.form-content input[type=text]:focus{
-    outline: none; 
-    border-bottom: 1px solid black;
-}
-.form-content p {
-    color: white;
-    font-size: 14px;
-}
-#p1{
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-}
-/*261018

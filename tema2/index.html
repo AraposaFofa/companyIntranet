@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TITLE-->
+    <title>Intranet</title>
+
+    <!--STYLES-->
+    <!--SCRIPTS-->
+    <script src="public/scripts/clock-date.js"></script>
+    <!--LINKS-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="shortcut icon" href="public/imagens/cropped-logo_PRINCIPAL_transparent_background-150x150.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/estilos/styles.css">
+
+</head>
+<body onload="clockDate()">
+    <!--Header with the nav bar-->
+    
+    <header>
+        <div class="wrapper">
+            <div class="inline-block">
+                <img src="public/imagens/cropped-logo_PRINCIPAL_transparent_background-150x150.png" alt="">
+            </div>
+            <nav class="inline-block">
+                <ul>
+                    <li><a href="#start">Inicio</a></li>
+                    <li><a href="https://app.pipedrive.com/auth/login" target="_blank" rel="noopener noreferrer">Pipedrive</a></li>
+                    <li><a href="https://app.asana.com/-/login" target="_blank" rel="noopener noreferrer">Asana</a></li>
+                    <li><a href="https://10.242.241.240:8089/gswave" target="_blank" rel="noopener noreferrer">GS Wave</a></li>
+                    <li><a href="https://mail.eletricca.com.br" target="_blank" rel="noopener noreferrer">Webmail</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+       
+    <!--Main section-->
+    <main>
+        <div class="wrapper">
+            <section class="sec1">
+                <table>
+                    <thead>
+                        <th colspan="3">Ramais</th>
+                    </thead>
+                    <tbody class="extension-table">
+                        <tr>
+                            <td>Nome</td>
+                            <td>Extensão</td>
+                        </tr>
+                        <tr>
+                            <td>Andrey Felipe</td>
+                            <td>3011</td>
+                        </tr>
+                        <tr>
+                            <td>Bernardo</td>
+                            <td>2007</td>
+                        </tr>
+                        <tr>
+                            <td>Erika Santos</td>
+                            <td>3007</td>
+                        </tr>
+                        <tr>
+                            <td>Etyvin Müller</td>
+                            <td>3005</td>
+                        </tr>
+                        <tr>
+                            <td>Ezequiel</td>
+                            <td>3008</td>
+                        </tr>
+                        <tr>
+                            <td>Gabriela Silva</td>
+                            <td>3006</td>
+                        </tr>
+                        <tr>
+                            <td>Glauber Santos</td>
+                            <td>3009</td>
+                        </tr>
+                        <tr>
+                            <td>Heitor Ventura</td>
+                            <td>3112</td>
+                        </tr>
+                        <tr>
+                            <td>Ingrid Cardoso</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Jhennefer Maia</td>
+                            <td>3002</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge Rodrigues</td>
+                            <td>3004</td>
+                        </tr>
+                        <tr>
+                            <td>Julie Pimentel</td>
+                            <td>1002</td>
+                        </tr>
+                        <tr>
+                            <td>Leonardo Alves</td>
+                            <td>1010</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Mello</td>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <td>Luiz Patrizzi</td>
+                            <td>3012</td>
+                        </tr>
+                        <tr>
+                            <td>Marcelo Poça</td>
+                            <td>1100</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Aparecida</td>
+                            <td>2001</td>
+                        </tr>
+                        <tr>
+                            <td>Michelle Soares</td>
+                            <td>3111</td>
+                        </tr>
+                        <tr>
+                            <td>Renato Lopes</td>
+                            <td>3110</td>
+                        </tr>
+                        <tr>
+                            <td>Renato Rocha</td>
+                            <td>3010</td>
+                        </tr>
+                        <tr>
+                            <td>Ricardo Meirelles</td>
+                            <td>1001</td>
+                        </tr>
+                        <tr>
+                            <td>Rodrigo Coelho</td>
+                            <td>3003</td>
+                        </tr>
+                        <tr>
+                            <td>Rogério Silva</td>
+                            <td>1002</td>
+                        </tr>
+                        <tr>
+                            <td>Ronaldo Silva</td>
+                            <td>3113</td>
+                        </tr>
+                        <tr>
+                            <td>Sala de TI</td>
+                            <td>3200</td>
+                        </tr>
+                        <tr>
+                            <td>Sala de reunião</td>
+                            <td>3100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="sec2">
+                <div class="logo-wrapper">
+                    <img src="public/imagens/logo_PRINCIPAL_transparent_background.png" alt="Logo Principal">
+                </div>
+                <div class="horizontal-bar"></div>
+                <div class="clock-date-wrapper">
+                    <div onload="clockDate()" id="clock-date"></div>
+                </div>
+                <div class="horizontal-bar"></div>
+                <form id="contact-form" method="post" action="/" >
+                    <input type="text" name="user" id="inp-user" placeholder="Coloque seu nome completo" required>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer with contacts and helps-->
+
+    <footer>
+        <div class="wrapper">
+            <section>contacts</section>
+            <section>helps</section>
+        </div>
+    </footer>
+</body>
+</html>

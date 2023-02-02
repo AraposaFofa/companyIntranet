@@ -1,5 +1,5 @@
 function quoter() {
-    fetch('./quotes.json', {
+    fetch('./scripts/quotes.json', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
@@ -13,7 +13,7 @@ function quoter() {
         let random =  getRandom(0, JSON.stringify(response.quotes.length))
         
         quotes.innerText = JSON.stringify(response.quotes[random].quote)
-        author.innerHTML = JSON.stringify(response.quotes[random].author).replaceAll('"', "")
+        author.innerHTML = '--'+JSON.stringify(response.quotes[random].author).replaceAll('"', "")
         response = JSON.stringify(response)
         return response
     })
@@ -21,4 +21,4 @@ function quoter() {
 const getRandom = (min, max) => {
    return Math.floor(Math.random() * (max - min + 1) + min)
 }
-  
+quoter()    
