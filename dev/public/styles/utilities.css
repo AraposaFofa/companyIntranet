@@ -1,0 +1,21 @@
+/*######################    SELECTION    ######################*/
+
+::selection{ 
+    background-color:#dd633a;
+    color: white;
+}
+
+/*######################    LINKS    ######################*/
+
+a:hover{
+    color: #FC7E54;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 0.6em 0.4em;
+    font-size: 1.3rem; 
+}
+p > a {
+    font-size: 1rem;
+} 

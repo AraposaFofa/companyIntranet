@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- METAS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS-->
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!-- FAVICON-->
+    <link rel="shortcut icon" href="imgs/icone.png" type="image/x-icon">
+    <!-- TITULO-->
+    <title>Eletricca</title>
+</head>
+
+<body onload="quoter(); extensions(); showTime();">
+    
+    <header>
+        <a href="https://eletricca.com.br">
+            <img src="imgs/icone.png" alt="">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li><!--
+            --><li><a href="https://app.asana.com/-/login" target="_blank" rel="noopener noreferrer">Asana</a></li><!--
+            --><li><a href="#ramais">Lista</a></li><!--
+            --><li><a href="https://app.pipedrive.com/auth/login" target="_blank" rel="noopener noreferrer">Pipedrive</a></li><!--
+            --></ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section class="width-full" id='firstId'>
+            <div class="margin-top-bottom">
+                <div class="eletricca-logo margin-fixer" style="padding-top: 0.5em;">
+                    <img src="imgs/logo.png" alt="Logo da Eletricca" srcset="">
+                </div>
+            </div>
+            <div class="divBar margin-fixer"></div>
+            <div class="margin-top-bottom">
+                <div class="quote-time-container margin-fixer">
+                    <div class="quote-content-widget">
+                        <div class="quote-content-table">
+                            <div class="quote-content-title" style="flex-direction: column;">
+                                <div class="quote-content-tittle-icon">
+                                    <img src="imgs/icone.png" alt="Icone da Eletricca" srcset="">
+                                </div>
+                                <div>
+                                    <p id="mensagem"></p>
+                                </div>
+                                <div class="quote-time-of-day">
+                                    <div id="clock">
+                                        00:00
+                                    </div>
+                                </div>
+                                <div class="quote-content">
+                                    <div id="quote"></div>
+                                    <div id="author"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="width-full margin-top-bottom">
+            <div class="status-container">
+                <table id="ramais">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Ramal</th>    
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>            
+
+        <section class="form-container">
+            <form class="form-content" action="/" method="post">
+                <label for="user"></label>
+                <input type="text" name="user" id="input-user" placeholder="Nome" required>
+                <textarea name="user-text" id="user-text" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>  
+        </section>
+        <!-- 
+            INTEGRAR COM BANCO DE DADOS!
+
+            <section class="width-full">
+            <div class='status-container'>
+                <h2>Status dos Serviços</h2>
+                <div>
+                    
+                </div>
+                <h4>Cobre do TI!</h4>
+            </div>
+        </section> 
+        -->
+        <section class="random-knowledge margin-top-bottom">
+            <h2>Como funciona a semantica de versionamento?</h2>
+            <div>
+                <p>
+                    Uma semantica de versionamento é feita da seguinte forma:
+                </p>
+                <p style="text-indent: 1.5rem;">
+                    vX.Y.Z... 
+                </p>
+                <p>
+                    X significa a versão major, onde ocorrem mudanças grandes.
+                </p>
+                <p>
+                    Y significa a versão minor, onde ocorrem pequenas, mas importantes mudanças.
+                </p>
+                <p>
+                    Z significa a versão patch, onde ocorrem correções de bugs.
+                </p>
+                <p>
+                    Para saber mais, clique no<a href="https://semver.org">link.</a>
+                </p>
+            </div>
+        </section>
+        <!-- <section>
+            <div>
+                <p>Ainda não fiz integrações com banco de dados e nem com armazenamento local</p>
+            </div>
+        </section> -->
+    </main>
+    <footer id='testandoLista'>
+        <p>Cobrem do TI qualquer outra coisa!</p>
+        <a href="gatos/index.html">v2.0.0</a>
+    </footer>
+</body>
+    <script src="scripts/scripts-clock.js"></script>
+    <script src="quotes.json" type="application/json"></script>
+    <script src="extensions.json" type="application/json"></script>
+    <script src="scripts/quoter.js"></script>
+    <script src="scripts/extension-list-maker.js"></script>
+    <script src="scripts/smart-navbar.js"></script>
+    <script src="scripts/gradient-animation.js"></script>
+</html>

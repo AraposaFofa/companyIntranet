@@ -1,0 +1,3 @@
+# Sitemap is also available on /sitemap.xml
+Sitemap: http://eletrosena.ddns.net/sitemap.xml
+User-agent: *

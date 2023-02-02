@@ -1,0 +1,46 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    color: darkgray;
+    text-align: right;
+}
+footer section{
+    font-size: 12px;
+    margin: 0 10vw;
+}
+footer a{
+    color: darkgray;
+    float: right;
+}
+/**HEADER*/
+header{
+    width: 100%;
+    background-color: white ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    padding: 0 20vw;   
+    transition: top 500ms ease-in-out;
+}
+nav ul li{
+    display: inline-block;
+    gap: 0px;
+    font-size: 0.7em;
+    padding: 0.6em;
+}
+header a img{
+    max-height: 1.5em;
+}
+header.scroll-up,
+header:focus-within{
+    top: 0;
+}
+header.scroll-down{
+    top: -100%;
+}

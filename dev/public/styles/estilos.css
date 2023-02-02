@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Outfit', 'Montserrat', 'Poppins';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+#firstIdStatic{
+    background-image: linear-gradient( 150deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) );
+}
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.margin-top-bottom  {
+    margin: 2em 0;
+}
+.divBar{
+    background-color: black;
+    padding: 1px;
+    min-width: 15em;
+    max-width: 18em;
+}
+.quote-time-container{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+}
+.quote-content-widget{
+    transition: background 0.5s ease 0s;
+    border-radius: 6px;
+}
+.quote-content-table{
+    background: rgba(15, 28, 45, 0.7);
+    backdrop-filter: blur(27.1828px);
+    border-radius: 6px;
+    padding: 8px 20px 14px;
+}
+.quote-content-title{
+    margin-top: 6px;   
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    line-height: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-family:  Arial, 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+#quote, #author {
+    font-size: 1em;
+}
+#author{
+    float: right;
+}
+.quote-content{
+    margin-top: 1em;
+    margin-bottom: 1.6em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 25em;
+}
+.quote-time-of-day{ 
+    font-family:  'Arial', 'Helvetica', 'sans-serif' ;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.eletricca-logo{
+    max-width: 400px;
+}
+.quote-content-tittle-icon{
+    max-width: 40px;
+    margin-bottom: 5px;
+}   
+tr:hover:not(thead tr){
+    background-color: lightgray;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+thead{
+    border-bottom: 1px solid black;
+}
+
+
+td {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+p{
+    font-size: 1rem;
+}
+
+/*##############################################
+
+
+
+###############################################*/
+th{
+    text-align: left;
+}
+
+
+#clock-date{
+    line-height: 0;
+    font-size: 0.8em;
+}
+.margin-fixer{
+    margin: auto;
+}
+.width-full{
+    width: 100%;
+}
+
+.black{
+    background-color: black;
+}
+
+.status-container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.status-container h2, h4{
+    text-align: center;
+}
+.status-container div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
