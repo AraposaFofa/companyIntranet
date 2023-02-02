@@ -1,0 +1,30 @@
+{
+  "name": "intranet",
+  "version": "1.0.0",
+  "description": "INTRANET-CONSTRULAR-ELETRICCA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "INTRANET"
+  ],
+  "author": "LC",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "commander": "^9.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "ldapjs": "^2.3.3",
+    "morgan": "^1.10.0",
+    "multiparty": "^4.2.3",
+    "ora": "^6.1.2",
+    "socket.io": "^4.5.4",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "youtube-mp3-downloader": "^0.7.11",
+    "ytdl-core": "^4.11.2"
+  }
+}

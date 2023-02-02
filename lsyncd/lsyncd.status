@@ -1,0 +1,13 @@
+Lsyncd status report at Fri Jan 13 16:22:22 2023
+
+Sync1 source=/var/log/lsyncd/
+There are 3 delays
+wait   Modify /lsyncd.log
+wait   Modify /lsyncd.log
+wait   Modify /lsyncd.log
+Filtering:
+  nothing.
+
+
+Inotify watching 1 directories
+  1: /var/log/lsyncd/

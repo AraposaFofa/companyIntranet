@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style.css">
+    <title>Youtube Downloader</title>
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    @font-face {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/outfit/v6/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Ew.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Outfit;
+    }
+    h1{
+        margin-top: 40vh;
+    }
+    body{
+        background:linear-gradient( 115deg, #eb8c6d8a, rgba(136, 136, 206, 0.7) ) ;
+    }
+    form{
+        text-align: center;
+    }
+    fieldset{
+        border: none;
+        margin-top: 1em;
+    }
+    
+    input[type=text]{
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: solid 1px black;
+        display: block;
+        padding: 0.5em;
+    }
+    input[type=submit]{
+        background: none;
+        border: 1px solid black;
+        border-radius: 16px;
+        outline: none;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.5em 1em;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Youtube downloader</h1>
+        <form action="/yt-downloads/" method="post">
+            <input name="aurl" required class="input" type="text" placeholder="Link do video">
+            <fieldset>
+                <input type="radio" name="type" value="video" id="video">
+                <label for="video">Video</label>
+            </fieldset>
+            <fieldset>
+                <input checked type="radio" name="type" value="audio" id="audio">
+                <label for="audio">Audio</label>
+            </fieldset>
+            <input type="submit" value="Download">
+        </form> 
+    </main>
+</body>
+</html>
