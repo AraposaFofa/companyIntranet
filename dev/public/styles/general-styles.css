@@ -1,0 +1,52 @@
+/*######################    general styles    ######################*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Outfit', 'Montserrat', 'Poppins';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px; /* the rem atribute uses this font-size as root font size */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/*######################    SELECTION    ######################*/
+
+::selection{ 
+    background-color:#dd633a;
+    color: white;
+}
+
+/*######################    LINKS    ######################*/
+
+a:hover{
+    color: #FC7E54;
+}
+a{
+    color: black;
+    text-decoration: none;
+    padding: 0.6em 0.4em;
+    font-size: 1.3rem; 
+}
+p > a {
+    font-size: 1rem;
+} 
+
+/*######################    generic    ######################*/
+
+p{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.status-container h2, h4{
+    text-align: center;
+}

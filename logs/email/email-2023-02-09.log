@@ -1,0 +1,45 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/var/www/html/development-folder/v2.1.0/logs/.a5efd455d65b79f9b3cc43d8d3cee0e5d14fc52a-audit.json",
+    "files": [
+        {
+            "date": 1675361454525,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-02.log",
+            "hash": "316255bd28e79101dbaba7bceffef836fd309c6c9bbbbc062666685b5a9bd858"
+        },
+        {
+            "date": 1675425811581,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-03.log",
+            "hash": "ba9247356556565e1413edd25028260338d4847747c47df04119df3ca6c8123c"
+        },
+        {
+            "date": 1675639089238,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-05.log",
+            "hash": "ca1d874f95acf436aa2d8ef0c7400faae2c444caad1fd49407908d0d66ea9bc9"
+        },
+        {
+            "date": 1675689350623,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-06.log",
+            "hash": "3f7b8a23d1f16dc8d85432669827c60cada214ed283fc8c94e52792cf04c0b4e"
+        },
+        {
+            "date": 1675773257748,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-07.log",
+            "hash": "9b2fe7b2d595c747b798b568e58506d0ee93088c9f7778e7825f0ae1f7a5acea"
+        },
+        {
+            "date": 1675888074769,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-08.log",
+            "hash": "5d639d2f198054485fce1ecdb71b623c677a46bba5634ed838b90a961db93faf"
+        },
+        {
+            "date": 1675953278291,
+            "name": "/var/www/html/development-folder/v2.1.0/logs/info-2023-02-09.log",
+            "hash": "fdebca66624c4b1788d333f16a18b25419520174bdca41f19bcb5a640a015acf"
+        }
+    ],
+    "hashType": "sha256"
+}

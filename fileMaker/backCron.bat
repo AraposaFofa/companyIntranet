@@ -1,0 +1,1 @@
+xcopy "C:\Users\%USERNAME%\Documents\Arquivos do Outlook" "C:\Users\%USERNAME%\Documents\Meus_Documentos_Na_Rede" /j

@@ -9,7 +9,7 @@ function youtubeDownloader(aURL, type) {
     aURL = aURL.replaceAll('"', "")
     type = type.replaceAll('"', "")
     const download = ytdl( ytdl.getVideoID(aURL), { filter: `${type}only` })
-    console.log('INiciando!')
+    console.log('Iniciando!')
     ytdl.getBasicInfo(aURL).then( response => {
             download.pipe(fs.createWriteStream(`./yt-downloads/baixados/${type}/${response.videoDetails.title}.mp4`))
         })

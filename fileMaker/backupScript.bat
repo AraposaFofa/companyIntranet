@@ -1,0 +1,1 @@
+mklink /d C:\Users\%USERNAME%\Documents\Meus_Documentos_Na_Rede \\10.242.241.245\meus-documentos-na-rede\lucas.curty

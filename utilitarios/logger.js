@@ -51,7 +51,7 @@ const emailOtions = {
 const fileRotateTransport = new winston.transports.DailyRotateFile({
     filename: `${appRootPath}/logs/info-%DATE%.log`,
     datePattern: "YYYY-MM-DD",
-    maxFiles: "14d",
+    maxFiles: "14d",                                     
     format: winston.format.combine(
         winston.format.label({ label: `server🏷️`}),
         winston.format.timestamp({ format: "YYYY-MM-DD"}),
@@ -72,14 +72,14 @@ const logger = winston.createLogger({
     transports: [
         new winston.transports.File(logOptions.file),
         new winston.transports.Console(logOptions.console),
-        fileRotateTransport,   
+        // fileRotateTransport,                                        // ATIVE ESSA LINHA PARA INICIALIZAR A ROTACAO DE LOG !!!!!!!!!!
     ],
     exitOnError: false 
 })
 const email = winston.createLogger({
     transports: [
         new winston.transports.File(emailOtions.file),
-        new winston.transports.Console(logOptions.console),
+        new winston.transports.Console(emailOtions.console),
         fileRotateTransportEmail,   
     ],
     exitOnError: false 
