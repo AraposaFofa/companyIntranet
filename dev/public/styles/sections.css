@@ -1,0 +1,339 @@
+/*######################    header    ######################*/
+
+header{
+    width: 100%;
+    background-color: white ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    padding: 0 20vw;   
+    transition: top 500ms ease-in-out;
+}
+
+/*######################    navbar    ######################*/
+
+nav ul li{
+    display: inline-block;
+    gap: 0px;
+    font-size: 1.2rem;
+    padding: 0.6em;
+    transition: border 100ms ease-in-out;
+    user-select: none;
+}
+nav ul li:hover{
+    border-bottom: 1px solid #FC7E54;
+}
+header a img{
+    max-height: 1.5em;
+}
+header label{
+    font-size: 1.2rem;
+}
+nav ul li:last-child, label{
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+nav ul li:last-child:hover{
+    color: white;
+    background-color: #FC7E54;
+}
+/*This is part of the smart navbar, 
+you can remove it and put static, fixed or sticky 
+on header{ display:sticky } */
+header.scroll-up,
+header:focus-within{
+    top: 0;
+}
+header.scroll-down{
+    top: -100%;
+}
+
+/*######################    main    ######################*/
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+/*######################    message, quote and date    ######################*/
+
+.quote-time-container{
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+}
+.quote-content-widget{
+    transition: background 0.5s ease 0s;
+    border-radius: 6px;
+}
+.quote-content-table{
+    background: rgba(15, 28, 45, 0.7);
+    backdrop-filter: blur(27.1828px);
+    border-radius: 6px;
+    padding: 8px 20px 14px;
+}
+.quote-content-title{
+    margin-top: 6px;   
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    line-height: 20px;
+    color: white;
+    font-size: 1.2em;
+    font-family:  Arial, 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+#quote, #author {
+    font-size: 1em;
+}
+#author{
+    float: right;
+}
+.quote-content{
+    margin-top: 1em;
+    margin-bottom: 1.6em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 25em;
+}
+.quote-time-of-day{ 
+    font-family:  'Arial', 'Helvetica', 'sans-serif' ;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.8);
+}
+.quote-content-tittle-icon{
+    max-width: 40px;
+    margin-bottom: 5px;
+}   
+
+
+/*######################    extension table    ######################*/
+
+th{
+    text-align: left;
+}
+tr:hover:not(thead tr){
+    background-color: lightgray;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+thead{
+    border-bottom: 1px solid black;
+}
+td {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0.5rem;
+}
+tr:nth-of-type(odd):not(thead tr){
+    background-color: rgb(245, 245, 245);
+}
+tr:nth-of-type(odd):hover:not(thead tr){
+    background-color: lightgrey;
+}
+
+/*######################    forms    ######################*/
+
+.form-content{
+    border-radius: 6px;
+    padding: 8px 20px 14px; 
+    max-width: 20em;
+}
+.form-content input{
+    display: block;
+}
+.form-content input[type=submit]{
+    margin: 1rem auto 1rem auto;
+    background: none;
+    cursor: pointer;
+    color: black;
+    border: none;
+}
+input:not(#input-user, #enviar, #backup-maker, #criar, #user-pass, #input-user2, #bookmark-name, #bookmark-url /*, #input-email, #input-password */) {
+    display: none;
+} 
+textarea{
+    display: none;
+}
+#enviar{
+    display: block;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s;  
+    padding: 0.5rem;
+}
+#enviar:hover, #criar:hover{
+    color: white;
+    background: #FC7E54;
+    box-shadow: 0 0 10px #FC7E54, 0 0 40px #FC7E54, 0 0 80px;   
+    border: transparent;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+.form-content input[type=text], input[type=password] /*, input[type=email]*/{
+    margin-top: 0.5em;
+    border: none;
+    background: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+.form-content input[type=text]:focus, input[type=password]:focus /*, input[type=email]:focus */{
+    outline: none; 
+    border-bottom: 1px solid black;
+}
+input{
+    display: block;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem 0;
+}
+label{
+    padding: 0.4rem;
+}
+
+/*######################    bookmarks    ######################*/
+:host{
+    --tile-size: 152px;
+    --tile-icon-size: 30px
+}
+:root{
+    --tile-size: 112px;
+    --tile-icon-size: 30px;
+}
+.bookmarks-container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: calc(6 * var(--tile-size));
+}
+.tile{
+    touch-action: none;
+    user-select: none;
+    height: var(--tile-size);
+    width: var(--tile-size);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tile-icon img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+}
+.tile:hover{
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+div.tile-title span{
+    font-size: 1rem;
+}
+#bookmarks-cont{
+    margin-top: 4rem;
+}
+.tile-del-button{
+    display: none;
+}
+.tile-del-button:hover{
+    padding: 0.3rem;
+    background: red;
+}
+.tile:hover .tile-del-button{
+    display: block;
+}
+#add-button{
+    cursor: pointer;
+}
+.add-popup{
+    display: none;
+    position: absolute;
+    top: 150;
+}
+#add-button:hover .add-popup{
+    display: block;
+}
+/*######################    footer    ######################*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    color: darkgray;
+    text-align: right;
+}
+footer section{
+    font-size: 12px;
+    margin: 0 10vw;
+}
+footer a{
+    color: darkgray;
+    float: right;
+}
+
+/*######################    utilities class    ######################*/
+
+#clock-date{
+    line-height: 0;
+    font-size: 0.8em;
+}
+.margin-fixer{
+    margin: auto;
+}
+.width-full{
+    width: 100%;
+}
+.divBar{
+    background-color: black;
+    padding: 1px;
+    min-width: 15em;
+    max-width: 18em;
+}
+.margin-top-bottom  {
+    margin: 4em 0;
+}
+
+.eletricca-logo{
+    max-width: 400px;
+}
+.status-container{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
